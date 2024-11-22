@@ -25,13 +25,13 @@
     gap:10px;
     margin:50px 0px 0px 60px;
 }
-.Business1,.Business2,.Business3{
-    height: 250px;
+.ecom1,.ecom2,.ecom3{
+    height: 280px;
     width:400px;
     border: 1px solid black;
     margin:0px 10px 35px 0px;
 }
-.Business1,.Business2,.Business3 h2{
+.ecom1,.ecom2,.ecom3 h2{
     text-align: center;
     /* color: #259bb0; */
     font-family: "SUSE", sans-serif;

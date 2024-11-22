@@ -25,13 +25,13 @@
     gap:10px;
     margin:50px 0px 0px 60px;
 }
-.Business1,.Business2,.Business3{
-    height: 250px;
+.blog1,.blog2,.blog3{
+    height: 280px;
     width:400px;
     border: 1px solid black;
     margin:0px 10px 35px 0px;
 }
-.Business1,.Business2,.Business3 h2{
+.blog1,.blog2,.blog3 h2{
     text-align: center;
     /* color: #259bb0; */
     font-family: "SUSE", sans-serif;

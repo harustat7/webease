@@ -175,6 +175,15 @@ h1,h2,h3,h4,h5,h6 {
 /* 6.1 Header
 --------------------------------------------------------------*/
 /* Preloader */
+
+.save_changes{
+  background-color: #00b6a1;
+  color:white;
+  border: none;
+  position: relative;
+  /* right:2%; */
+}
+
 .preloader-wrapper {
   width: 100%;
   height: 100vh;

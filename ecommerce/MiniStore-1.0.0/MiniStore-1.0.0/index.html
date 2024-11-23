@@ -20,7 +20,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0" class="template" id=".template" contenteditable="true">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
@@ -131,9 +131,12 @@
     <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
+
           <a class="navbar-brand" href="index.html">
-            <img src="images/main-logo.png" class="logo">
+            <img src="images/main-logo.png" class="logo editable_image" id="editable_image">
           </a>
+
+          <button onclick="saveChanges()" class="save_changes" id=".save_changes">Save Changes</button>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="navbar-icon">
               <use xlink:href="#navbar-icon"></use>
@@ -142,7 +145,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
               <a class="navbar-brand" href="index.html">
-                <img src="images/main-logo.png" class="logo">
+                <img src="images/main-logo.png" class="logo editable_image" id="editable_image">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
@@ -242,7 +245,7 @@
                 </div>
                 <div class="col-md-5">
                   <div class="image-holder">
-                    <img src="images/banner-image.png" alt="banner">
+                    <img src="images/banner-image.png" alt="banner" class="editable_image" id="editable_image">
                   </div>
                 </div>
               </div>
@@ -259,7 +262,7 @@
                 </div>
                 <div class="col-md-5">
                   <div class="image-holder">
-                    <img src="images/banner-image.png" alt="banner">
+                    <img src="images/banner-image.png" alt="banner" class="editable_image" id="editable_image">
                   </div>
                 </div>
               </div>
@@ -350,7 +353,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item1.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -368,7 +371,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item2.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -386,7 +389,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item3.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -404,7 +407,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -422,7 +425,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -457,7 +460,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -475,7 +478,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -493,7 +496,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -511,7 +514,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -529,7 +532,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid editable_image" id="editable_image">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -577,7 +580,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-none me-3">
                 <div class="card-image">
-                  <img src="images/post-item1.jpg" alt="" class="img-fluid">
+                  <img src="images/post-item1.jpg" alt="" class="img-fluid editable_image" id="editable_image">
                 </div>
               </div>
               <div class="card-body text-uppercase">
@@ -593,7 +596,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-none me-3">
                 <div class="card-image">
-                  <img src="images/post-item2.jpg" alt="" class="img-fluid">
+                  <img src="images/post-item2.jpg" alt="" class="img-fluid editable_image" id="editable_image">
                 </div>
               </div>
               <div class="card-body text-uppercase">
@@ -609,7 +612,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-none me-3">
                 <div class="card-image">
-                  <img src="images/post-item3.jpg" alt="" class="img-fluid">
+                  <img src="images/post-item3.jpg" alt="" class="img-fluid editable_image" id="editable_image">
                 </div>
               </div>
               <div class="card-body text-uppercase">
@@ -737,7 +740,7 @@
           <div class="d-flex flex-wrap">
             <figure class="instagram-item pe-2">
               <a href="https://templatesjungle.com/" class="image-link position-relative">
-                <img src="images/insta-item1.jpg" alt="instagram" class="insta-image">
+                <img src="images/insta-item1.jpg" alt="instagram" class="insta-image editable_image" id="editable_image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                   <svg class="instagram">
                     <use xlink:href="#instagram"></use>
@@ -747,7 +750,7 @@
             </figure>
             <figure class="instagram-item pe-2">
               <a href="https://templatesjungle.com/" class="image-link position-relative">
-                <img src="images/insta-item2.jpg" alt="instagram" class="insta-image">
+                <img src="images/insta-item2.jpg" alt="instagram" class="insta-image editable_image" id="editable_image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                   <svg class="instagram">
                     <use xlink:href="#instagram"></use>
@@ -757,7 +760,7 @@
             </figure>
             <figure class="instagram-item pe-2">
               <a href="https://templatesjungle.com/" class="image-link position-relative">
-                <img src="images/insta-item3.jpg" alt="instagram" class="insta-image">
+                <img src="images/insta-item3.jpg" alt="instagram" class="insta-image editable_image" id="editable_image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                   <svg class="instagram">
                     <use xlink:href="#instagram"></use>
@@ -767,7 +770,7 @@
             </figure>
             <figure class="instagram-item pe-2">
               <a href="https://templatesjungle.com/" class="image-link position-relative">
-                <img src="images/insta-item4.jpg" alt="instagram" class="insta-image">
+                <img src="images/insta-item4.jpg" alt="instagram" class="insta-image editable_image" id="editable_image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                   <svg class="instagram">
                     <use xlink:href="#instagram"></use>
@@ -777,7 +780,7 @@
             </figure>
             <figure class="instagram-item pe-2">
               <a href="https://templatesjungle.com/" class="image-link position-relative">
-                <img src="images/insta-item5.jpg" alt="instagram" class="insta-image">
+                <img src="images/insta-item5.jpg" alt="instagram" class="insta-image editable_image" id="editable_image">
                 <div class="icon-overlay position-absolute d-flex justify-content-center">
                   <svg class="instagram">
                     <use xlink:href="#instagram"></use>
@@ -796,7 +799,7 @@
             <div class="row d-flex flex-wrap justify-content-between">
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu">
-                  <img src="images/main-logo.png" alt="logo">
+                  <img src="images/main-logo.png" alt="logo" class="editable_image" id="editable_image">
                   <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
@@ -905,8 +908,8 @@
             <div class="Shipping d-flex">
               <p>We ship with:</p>
               <div class="card-wrap ps-2">
-                <img src="images/dhl.png" alt="visa">
-                <img src="images/shippingcard.png" alt="mastercard">
+                <img src="images/dhl.png" alt="visa" class="editable_image" id="editable_image">
+                <img src="images/shippingcard.png" alt="mastercard" class="editable_image" id="editable_image">
               </div>
             </div>
           </div>
@@ -914,9 +917,9 @@
             <div class="payment-method d-flex">
               <p>Payment options:</p>
               <div class="card-wrap ps-2">
-                <img src="images/visa.jpg" alt="visa">
-                <img src="images/mastercard.jpg" alt="mastercard">
-                <img src="images/paypal.jpg" alt="paypal">
+                <img src="images/visa.jpg" alt="visa" class="editable_image" id="editable_image">
+                <img src="images/mastercard.jpg" alt="mastercard" class="editable_image" id="editable_image">
+                <img src="images/paypal.jpg" alt="paypal" class="editable_image" id="editable_image">
               </div>
             </div>
           </div>

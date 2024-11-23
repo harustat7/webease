@@ -2864,3 +2864,10 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+.save_changes{
+  background-color: #00b6a1;
+  color:white;
+  border: none;
+  position: relative;
+  /* right:2%; */
+}

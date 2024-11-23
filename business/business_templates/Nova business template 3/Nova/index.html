@@ -36,11 +36,11 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page template" id=".template" contenteditable="true">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+      <button onclick="saveChanges()" class="save_changes" id=".save_changes">Save Changes</button>
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
@@ -85,7 +85,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" class="editable_image" id="editable_image" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -112,7 +112,7 @@
         <div class="row g-0">
 
           <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/why-us-bg.jpg" alt="">
+            <img src="assets/img/why-us-bg.jpg" class="editable_image" id="editable_image" alt="">
           </div>
 
           <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -263,7 +263,7 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+      <img src="assets/img/cta-bg.jpg" class="editable_image" id="editable_image" alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -349,7 +349,7 @@
           </div>
           <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
             <div class="phone-wrap">
-              <img src="assets/img/iphone.png" alt="Image" class="img-fluid">
+              <img src="assets/img/iphone.png" alt="Image" class="img-fluid editable_image" id="editable_image">
             </div>
           </div>
         </div>
@@ -385,7 +385,7 @@
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid editable_image" id="editable_image" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, December 12</span>
                 <span class="post-author"> / Julia Parker</span>
@@ -398,7 +398,7 @@
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid editable_image" id="editable_image" alt=""></div>
               <div class="meta">
                 <span class="post-date">Fri, September 05</span>
                 <span class="post-author"> / Mario Douglas</span>
@@ -411,7 +411,7 @@
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid editable_image" id="editable_image" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, July 27</span>
                 <span class="post-author"> / Lisa Hunter</span>
@@ -424,7 +424,7 @@
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt=""></div>
+              <div class="post-img"><img src="assets/img/blog/blog-4.jpg" class="img-fluid editable_image" id="editable_image" alt=""></div>
               <div class="meta">
                 <span class="post-date">Tue, Sep 16</span>
                 <span class="post-author"> / Mario Douglas</span>

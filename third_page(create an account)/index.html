@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,6 +44,80 @@
         </div>
 
         <script src="script.js"></script>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Create an Account</h1>
+
+            <div class="credentials">
+                <h3>Full Name</h3>
+                <input type="text" name="name" id="name">
+                <br><br>
+                <h3>Email</h3>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <h3>Password</h3>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <h3>Confirm Password</h3>
+                <input type="password" name="re-password" id="re-password">
+                <br>
+            </div>
+
+            <button onclick="register()">Create an Account</button>
+            <br>
+        </div>
+        <div class="login">
+            <h4>Already have an account? <a href="login.html">Login</a></h4>
+        </div>
+
+        <script>
+            async function register() {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const rePassword = document.getElementById("re-password").value;
+
+                if (password !== rePassword) {
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                const data = { username: email, password, fullName: name };
+
+                try {
+                    const response = await fetch("http://localhost:3000/register", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+                    if (response.status === 201) {
+                        alert(result.message);
+                        window.location.href = "login.html"; // Redirect to login page
+                    } else {
+                        alert(result.error);
+                    }
+                } catch (error) {
+                    alert("An error occurred while registering the user.");
+                }
+            }
+        </script>
     </div>
 </body>
 </html>

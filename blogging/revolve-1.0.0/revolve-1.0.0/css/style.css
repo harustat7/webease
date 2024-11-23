@@ -1568,5 +1568,11 @@ footer
     padding-left: 0px;
   }
 }
-
+.save_changes{
+  background-color: #00b6a1;
+  color:white;
+  border: none;
+  position: relative;
+  /* right:2%; */
+}
 /*# sourceMappingURL=style.css.map */

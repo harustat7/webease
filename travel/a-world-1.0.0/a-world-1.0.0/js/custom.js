@@ -369,3 +369,29 @@ $(function () {
 
 
 });
+
+const templateContent = document.querySelector('.template').innerHTML;
+
+document.querySelectorAll('.editable_image').forEach((image) => {
+
+  image.addEventListener('click', function () {
+    const input = document.createElement('input'); 
+    input.type = 'file';
+    input.accept = 'image/*';
+
+    input.click();
+
+    input.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          image.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file); 
+      }
+    });
+  });
+});

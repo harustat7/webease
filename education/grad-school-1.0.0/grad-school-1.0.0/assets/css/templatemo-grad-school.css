@@ -1592,3 +1592,10 @@ footer p a:hover {
     letter-spacing: 0.25px;
   }
 }
+.save_changes{
+  background-color: #00b6a1;
+  color:white;
+  border: none;
+  position: relative;
+  /* right:2%; */
+}

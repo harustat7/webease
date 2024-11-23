@@ -37,21 +37,22 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="template" id=".template" contenteditable="true">
 
 	<header class="header-top bg-grey justify-content-center">
 		<div class="container">
+			<button onclick="saveChanges()" class="save_changes" id=".save_changes" contenteditable="false">Save Changes</button>
 			<div class="row align-items-center">
 				<div class="col-lg-2 col-md-4 text-center d-none d-lg-block">
 					<a class="navbar-brand " href="index.html">
-						<img src="images/logo.png" alt="" class="img-fluid">
+						<img src="images/logo.png" class="editable_image" id="editable_image" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<div class="col-lg-8 col-md-12">
 					<nav class="navbar navbar-expand-lg navigation-2 navigation">
 						<a class="navbar-brand text-uppercase d-lg-none" href="#">
-							<img src="images/logo.png" alt="" class="img-fluid">
+							<img src="images/logo.png" alt="" class="img-fluid editable_image" id="editable_image">
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
 							aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,7 +138,7 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider1.jpg" alt="" class="img-fluid">
+									<img src="images/slider/slider1.jpg" alt="" class="img-fluid editable_image" id="editable_image">
 								</a>
 							</div>
 
@@ -153,7 +154,7 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider2.jpg" alt="" class="img-fluid">
+									<img src="images/slider/slider2.jpg" alt="" class="img-fluid editable_image" id="editable_image">
 								</a>
 							</div>
 							<div class="slider-post-content">
@@ -168,7 +169,7 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider3.jpg" alt="" class="img-fluid">
+									<img src="images/slider/slider3.jpg" alt="" class="img-fluid editable_image" id="editable_image">
 								</a>
 							</div>
 							<div class="slider-post-content">
@@ -183,7 +184,7 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider2.jpg" alt="" class="img-fluid">
+									<img src="images/slider/slider2.jpg" alt="" class="img-fluid editable_image" id="editable_image">
 								</a>
 							</div>
 
@@ -199,7 +200,7 @@
 						<div class="slider-item-content">
 							<div class="post-thumb mb-4">
 								<a href="blog-single.html">
-									<img src="images/slider/slider3.jpg" alt="" class="img-fluid">
+									<img src="images/slider/slider3.jpg" alt="" class="img-fluid editable_image" id="editable_image">
 								</a>
 							</div>
 
@@ -223,7 +224,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f1.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f1.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-extra text-sm text-uppercase letter-spacing-1">Explore</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">The best place to explore to enjoy</a></h3>
@@ -235,7 +236,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f2.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f2.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">How to Make list for travelling alone</a></h3>
@@ -247,7 +248,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f3.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f3.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Food</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">5 ingredient cilantro vinaigrette</a></h3>
@@ -259,7 +260,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f4.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f4.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Explore</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">A Simple Way to Feel Like Home When You
@@ -272,7 +273,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f5.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f5.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">What Type of Traveller Are You?</a></h3>
@@ -284,7 +285,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f6.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f6.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">A Road Trip Review of the 2018</a></h3>
@@ -296,7 +297,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f7.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f7.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">music</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">Portugal’s Sunset summer vission</a></h3>
@@ -308,7 +309,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f8.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f8.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">beauty</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">The best soft Tropical Getaway</a></h3>
@@ -320,7 +321,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f9.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f9.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">Memoriable Paris Girls Trip </a></h3>
@@ -332,7 +333,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f10.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f10.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">How to Plan your Trip the Right Way</a></h3>
@@ -345,7 +346,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f11.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f11.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">8 Powerful Ways to Add Vibrant Colour to Your
@@ -358,7 +359,7 @@
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="blog-single.html">
-									<img src="images/news/f12.jpg" alt="" class="img-fluid w-100">
+									<img src="images/news/f12.jpg" alt="" class="img-fluid w-100 editable_image" id="editable_image">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
 								<h3 class="post-title mt-1"><a href="blog-single.html">The best to-do list to help boost your

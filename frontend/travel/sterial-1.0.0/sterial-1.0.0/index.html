@@ -33,7 +33,7 @@
 
 	<title>Sterial &mdash; Free Bootstrap 5 Website Template by Untree.co </title>
 </head>
-<body>
+<body class="template" id=".template" contenteditable="true">
 
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
@@ -46,7 +46,7 @@
 
 	<nav class="site-nav mt-3">
 		<div class="container">
-
+			<button onclick="saveChanges()" class="save_changes" id=".save_changes" contenteditable="false">Save Changes</button>
 			<div class="site-navigation">
 				<div class="row">
 					<div class="col-6 col-lg-3">
@@ -96,7 +96,7 @@
 	<div class="hero overlay">
 
 		<div class="img-bg rellax">
-			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
+			<img src="images/hero_1.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 		</div>
 
 		<div class="container">
@@ -130,10 +130,10 @@
 				<div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up"  >
-							<img src="images/img_v_1.jpg" alt="Image" class="img-fluid rellax ">
+							<img src="images/img_v_1.jpg" alt="Image" class="img-fluid rellax editable_image" id="editable_image">
 						</div>
 						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"  data-rellax-percentage="0.5">
-							<img src="images/img_v_2.jpg" alt="Image" class="img-fluid">
+							<img src="images/img_v_2.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						</div>
 					</div>
 
@@ -172,7 +172,7 @@
 						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="100">
 							<div class="service-1">
 								<span class="icon">
-									<img src="images/svg/01.svg" alt="Image" class="img-fluid">
+									<img src="images/svg/01.svg" alt="Image" class="img-fluid editable_image" id="editable_image">
 								</span>
 								<div>
 									<h3>Tourism</h3>
@@ -183,7 +183,7 @@
 						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="200">
 							<div class="service-1">
 								<span class="icon">
-									<img src="images/svg/02.svg" alt="Image" class="img-fluid">
+									<img src="images/svg/02.svg" alt="Image" class="img-fluid editable_image" id="editable_image">
 								</span>
 								<div>
 									<h3>Package Tours</h3>
@@ -194,7 +194,7 @@
 						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="300">
 							<div class="service-1">
 								<span class="icon">
-									<img src="images/svg/03.svg" alt="Image" class="img-fluid">
+									<img src="images/svg/03.svg" alt="Image" class="img-fluid editable_image" id="editable_image">
 								</span>
 								<div>
 									<h3>Travel Insurance</h3>
@@ -205,7 +205,7 @@
 						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="400">
 							<div class="service-1">
 								<span class="icon">
-									<img src="images/svg/04.svg" alt="Image" class="img-fluid">
+									<img src="images/svg/04.svg" alt="Image" class="img-fluid editable_image" id="editable_image">
 								</span>
 								<div>
 									<h3>Airport Lounge Access</h3>
@@ -247,7 +247,7 @@
 			<div class="destination-slider">
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-1.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-1.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$430</div>
 					</div>
 					<div class="mt-4">
@@ -258,7 +258,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-2.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-2.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$560</div>
 					</div>
 					<div class="mt-4">
@@ -269,7 +269,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-3.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-3.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$490</div>
 					</div>
 					<div class="mt-4">
@@ -280,7 +280,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-4.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$490</div>
 					</div>
 					<div class="mt-4">
@@ -292,7 +292,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-5.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-5.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$430</div>
 					</div>
 					<div class="mt-4">
@@ -303,7 +303,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-6.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-6.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$560</div>
 					</div>
 					<div class="mt-4">
@@ -314,7 +314,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-7.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-7.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$490</div>
 					</div>
 					<div class="mt-4">
@@ -325,7 +325,7 @@
 
 				<div class="destination">
 					<div class="thumb">
-						<img src="images/img-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/img-4.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						<div class="price">$490</div>
 					</div>
 					<div class="mt-4">
@@ -343,7 +343,7 @@
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-5 mb-4 mb-lg-0 order-lg-2" data-aos="fade-up">
-					<img src="images/img-1.jpg" alt="Image" class="img-fluid">
+					<img src="images/img-1.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 				</div>
 				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 					<h2 class="heading mb-4">Sweet Memories Come To Life Again</h2>
@@ -380,7 +380,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_1.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_1.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>John Doe</h3>
 							<p class="position mb-5">CEO, Founder</p>
 						</div>
@@ -393,7 +393,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_2.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_2.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>James Woodland</h3>
 							<p class="position mb-5">Designer at Facebook</p>
 						</div>
@@ -407,7 +407,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_3.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_3.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>Rob Smith</h3>
 							<p class="position mb-5">Product Designer at Twitter</p>
 						</div>
@@ -420,7 +420,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_1.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_1.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>John Doe</h3>
 							<p class="position mb-5">CEO, Founder</p>
 						</div>
@@ -433,7 +433,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_2.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_2.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>James Woodland</h3>
 							<p class="position mb-5">Designer at Facebook</p>
 						</div>
@@ -447,7 +447,7 @@
 				<div class="item">
 					<blockquote class="block-testimonial">
 						<div class="author">
-							<img src="images/person_3.jpg" alt="Free template by TemplateUX">
+							<img src="images/person_3.jpg" alt="Free template by TemplateUX" class="editable_image" id="editable_image">
 							<h3>Rob Smith</h3>
 							<p class="position mb-5">Product Designer at Twitter</p>
 						</div>
@@ -467,7 +467,7 @@
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-5 mb-4 mb-lg-0">
-					<img src="images/img_v_2.jpg" alt="Image" class="img-fluid">
+					<img src="images/img_v_2.jpg" alt="Image" class="img-fluid editable_image" id=editable_image>
 				</div>
 				<div class="col-lg-5 mt-4 mt-lg-0"  data-aos="fade-up" data-aos-delay="100">
 
@@ -543,7 +543,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
 					<div class="media-entry">
 						<a href="#">
-							<img src="images/gal_1.jpg" alt="Image" class="img-fluid">
+							<img src="images/gal_1.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						</a>
 						<div class="bg-white m-body">
 							<span class="date">May 14, 2020</span>
@@ -560,7 +560,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
 					<div class="media-entry">
 						<a href="#">
-							<img src="images/gal_2.jpg" alt="Image" class="img-fluid">
+							<img src="images/gal_2.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						</a>
 						<div class="bg-white m-body">
 							<span class="date">May 14, 2020</span>
@@ -577,7 +577,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
 					<div class="media-entry">
 						<a href="#">
-							<img src="images/gal_3.jpg" alt="Image" class="img-fluid">
+							<img src="images/gal_3.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						</a>
 						<div class="bg-white m-body">
 							<span class="date">May 14, 2020</span>
@@ -593,7 +593,7 @@
 				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
 					<div class="media-entry">
 						<a href="#">
-							<img src="images/gal_4.jpg" alt="Image" class="img-fluid">
+							<img src="images/gal_4.jpg" alt="Image" class="img-fluid editable_image" id="editable_image">
 						</a>
 						<div class="bg-white m-body">
 							<span class="date">May 14, 2020</span>

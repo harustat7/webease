@@ -9864,3 +9864,10 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
+.save_changes{
+  background-color: #00b6a1;
+  color:white;
+  border: none;
+  position: relative;
+  /* right:2%; */
+}

@@ -10499,3 +10499,11 @@ textarea {
       .site-footer .social li a:hover {
         background: #f59b74;
         color: #fff; }
+
+        .save_changes{
+          background-color: #00b6a1;
+          color:white;
+          border: none;
+          position: relative;
+          /* right:2%; */
+        }

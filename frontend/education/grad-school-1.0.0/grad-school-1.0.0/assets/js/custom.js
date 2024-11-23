@@ -104,7 +104,10 @@
 	})()
 
 })(jQuery);
+<<<<<<< HEAD:frontend/education/grad-school-1.0.0/grad-school-1.0.0/assets/js/custom.js
 
+=======
+>>>>>>> 8f67de625631d379649a216b9ba8a92c90371f4d:education/grad-school-1.0.0/grad-school-1.0.0/assets/js/custom.js
 const templateContent = document.querySelector('.template').innerHTML;
 
 document.querySelectorAll('.editable_image').forEach((image) => {
@@ -127,7 +130,13 @@ document.querySelectorAll('.editable_image').forEach((image) => {
 
         reader.readAsDataURL(file); 
       }
+<<<<<<< HEAD:frontend/education/grad-school-1.0.0/grad-school-1.0.0/assets/js/custom.js
     });
   });
 });
 
+=======
+    });
+  });
+});
+>>>>>>> 8f67de625631d379649a216b9ba8a92c90371f4d:education/grad-school-1.0.0/grad-school-1.0.0/assets/js/custom.js

@@ -1,19 +1,19 @@
 document.getElementsByName('Business')[0].addEventListener('click',function(){
-    window.location.href="/business/index.html";
+    window.location.href="/frontend/business/index.html";
 });
 
 document.getElementsByName('Ecommerce')[0].addEventListener('click',function(){
-    window.location.href="/ecommerce/index.html";
+    window.location.href="/frontend/ecommerce/index.html";
 });
 
 document.getElementsByName('Education')[0].addEventListener('click',function(){
-    window.location.href="/education/index.html";
+    window.location.href="/frontend/education/index.html";
 });
 
 document.getElementsByName('Blogging')[0].addEventListener('click',function(){
-    window.location.href="/blogging/index.html";
+    window.location.href="/frontend/blogging/index.html";
 });
 
 document.getElementsByName('TravelTourism')[0].addEventListener('click',function(){
-    window.location.href="/travel/index.html";
+    window.location.href="/frontend/travel/index.html";
 });

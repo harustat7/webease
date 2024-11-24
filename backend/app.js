@@ -86,9 +86,78 @@ app.post('/login', async (req, res) => {
 // Serve Frontend Files
 app.use(express.static(path.join(__dirname, 'frontend')));
 
+const mongoose = require('mongoose');
+
+// Define the Domain schema
+const domainSchema = new mongoose.Schema({
+    domain: {
+        type: String,
+        required: true,
+        unique: true, // Ensures the domain is unique
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now, // Automatically set the creation date
+    },
+});
+
+// Create the model
+const Domain = mongoose.model('Domain', domainSchema);
+
+module.exports = Domain;
+
+const Domain = require("./models/Domain"); // Import the Domain schema
+
+
+// app.use(express.json()); // Middleware for parsing JSON
+
+// POST /launch route
+app.post('/launch', async (req, res) => {
+    const { domain } = req.body;
+
+    if (!domain) {
+        return res.status(400).json({ message: 'Domain name is required.' });
+    }
+
+    try {
+        // Check if domain already exists
+        const existingDomain = await Domain.findOne({ domain });
+        if (existingDomain) {
+            return res.status(409).json({ message: 'Domain name already exists.' });
+        }
+
+        // Save the domain to the database
+        const newDomain = new Domain({ domain });
+        await newDomain.save();
+
+        res.status(201).json({ message: 'Domain saved successfully.' });
+    } catch (error) {
+        console.error('Error saving domain:', error);
+        res.status(500).json({ message: 'Internal server error.' });
+    }
+});
+
+
 // Start Server
+// app.listen(PORT, () => {
+//     console.log(`Server running on http://localhost:${PORT}`);
+// });
+
+// for saving the save changes 
+// const saveRoute = require('./route/save');
+
+// app.use(express.json());
+// app.use('/save', saveRoute);
+
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
+// app.listen(3000, () => {
+//     console.log('Server running on http://localhost:3001');
+// });
+// Start your Express server
+// app.listen(3000, () => {
+//   console.log('Server running on port 3000');
+// });
 

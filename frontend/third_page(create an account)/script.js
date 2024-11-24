@@ -1,5 +1,5 @@
 document.getElementsByName('login')[0].addEventListener('click',function(){
-    window.location.href="/frontend/third_page(create an account)/index.html";
+    window.location.href="/frontend/second_page(login)/index.html";
 });
 
 document.querySelector('button').addEventListener('click', async () => {
@@ -19,7 +19,7 @@ document.querySelector('button').addEventListener('click', async () => {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/register', {
+        const response = await fetch('http://localhost:3001/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ fullName, email, password }),

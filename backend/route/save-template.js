@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const router = express.Router();
 
-router.post('/save', (req, res) => {
+router.post('/save-template', (req, res) => {
     const { content, imageSources } = req.body;
 
     if (!content) {
@@ -21,3 +21,4 @@ router.post('/save', (req, res) => {
 });
 
 module.exports = router;
+console.log("saved changess")

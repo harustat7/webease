@@ -241,6 +241,29 @@ document.querySelectorAll('.editable_image').forEach((image) => {
     });
   });
 });
+function saveChanges() {
+  const templateContent = document.querySelector('.template').innerHTML;
+
+  fetch('/save-template', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ content: templateContent }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('Failed to save changes.');
+    })
+    .then((data) => {
+      alert('Changes saved successfully!');
+    })
+    .catch((error) => {
+      console.error('Error saving changes:', error);
+    });
+}
 
 const templateContent = document.querySelector('.template').innerHTML;
 

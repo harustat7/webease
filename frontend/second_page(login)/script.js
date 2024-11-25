@@ -21,8 +21,8 @@ document.querySelector('.login-button').addEventListener('click', async function
 
         const result = await response.json();
         if (response.ok) {
-            console.log('Login successful:', result.token); // Log the token
-            localStorage.setItem('token', result.token); // Save the token
+            console.log('Login successful:', result.token); 
+            localStorage.setItem('token', result.token); 
             window.location.href = '/frontend/domain_page.html';
         } else {
             alert(result.error || 'Login failed');
@@ -33,13 +33,11 @@ document.querySelector('.login-button').addEventListener('click', async function
     }
 });
 
-// Script for the login page and domain launch page
 
-// // Constants
-// const LOGIN_API_URL = "http://localhost:3000/login"; // Backend login endpoint
-// const DOMAIN_PAGE_URL = "/frontend/fourth_page/index.html"; // Path to the domain page
+// const LOGIN_API_URL = "http://localhost:3000/login"; 
+// const DOMAIN_PAGE_URL = "/frontend/fourth_page/index.html"; 
 
-// // Wait for DOM to load before attaching event listeners
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     const loginButton = document.getElementById("login");
 //     const launchButton = document.querySelector(".launch");
@@ -83,7 +81,6 @@ document.querySelector('.login-button').addEventListener('click', async function
 //         });
 //     }
 
-//     // Launch button click handler (for the domain page)
 //     if (launchButton) {
 //         launchButton.addEventListener("click", () => {
 //             const token = localStorage.getItem("token");
@@ -106,7 +103,6 @@ document.querySelector('.login-button').addEventListener('click', async function
 //     }
 // });
 
-// Login button event
 
 // document.getElementById('login').addEventListener('click', async () => {
 //     const email = document.getElementById('email').value;
@@ -136,7 +132,7 @@ document.querySelector('.login-button').addEventListener('click', async function
 //     }
 // });
 
-// // Launch button event
+
 // document.querySelector('.launch').addEventListener('click', async () => {
 //     const domain = document.getElementById('domain').value;
 //     const token = localStorage.getItem('authToken'); // Retrieve token from storage
